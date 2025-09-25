@@ -11,13 +11,13 @@ export interface ThrottleOptions {
   trailing?: boolean
 }
 
-interface DebouncedFunc<T extends (...args: any[]) => any> {
+export interface DebouncedFunc<T extends (...args: any[]) => any> {
   (...args: Parameters<T>): ReturnType<T> | undefined
   cancel(): void
   flush(): ReturnType<T> | undefined
 }
 
-interface ThrottledFunc<T extends (...args: any[]) => any> {
+export interface ThrottledFunc<T extends (...args: any[]) => any> {
   (...args: Parameters<T>): ReturnType<T> | undefined
   cancel(): void
   flush(): ReturnType<T> | undefined

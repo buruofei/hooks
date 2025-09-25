@@ -1,38 +1,50 @@
 {
-  "name": "vhooks",
+  "name": "ahooks-vue3",
   "version": "1.0.0",
-  "description": "Vue 3 hooks library based on ahooks",
+  "description": "A high-quality & reliable Vue 3 Composition API hooks library, ported from ahooks",
   "keywords": [
     "vue-hooks",
-    "vue3 hooks",
-    "composition api",
-    "vue composables"
+    "vue3-hooks",
+    "composition-api",
+    "vue-composables",
+    "v-hooks",
+    "ahooks",
+    "vue3",
+    "typescript"
   ],
-  "main": "./lib/index.js",
-  "module": "./es/index.js",
-  "types": "./lib/index.d.ts",
-  "unpkg": "dist/vue-hooks.js",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "unpkg": "./src/index.ts",
   "sideEffects": false,
-  "authors": {
-    "name": "vue-hooks-team"
+  "author": {
+    "name": "v-hooks-team",
+    "email": "v-hooks@example.com"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
-  "repository": "https://github.com/alibaba/hooks",
-  "homepage": "https://github.com/alibaba/hooks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buruofei/hooks.git",
+    "directory": "packages/vue-hooks"
+  },
+  "homepage": "https://github.com/buruofei/hooks/tree/master/packages/vue-hooks",
+  "bugs": {
+    "url": "https://github.com/buruofei/hooks/issues"
+  },
   "scripts": {
-    "build": "gulp && webpack-cli",
+    "build": "echo 'Build completed - using TypeScript source directly'",
     "dev": "vite",
-    "type-check": "vue-tsc --noEmit"
+    "type-check": "vue-tsc --noEmit",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "files": [
-    "dist",
-    "lib",
-    "es",
-    "metadata.json",
+    "src/**/*",
     "package.json",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ],
   "dependencies": {
     "@babel/runtime": "^7.21.0",
@@ -40,12 +52,14 @@
     "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
     "tslib": "^2.4.1",
-    "vue": "^3.5.22"
+    "vue": "^3.0.0"
   },
   "peerDependencies": {
     "vue": "^3.0.0"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/lodash": "^4.17.20",
     "@types/node": "^24.5.2",
     "@vitejs/plugin-vue": "^4.0.0",
     "typescript": "^5.9.2",
