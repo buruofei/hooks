@@ -1,0 +1,59 @@
+{
+  "name": "vue-hooks",
+  "version": "1.0.0",
+  "description": "Vue 3 hooks library based on ahooks",
+  "keywords": [
+    "vue-hooks",
+    "vue3 hooks",
+    "composition api",
+    "vue composables"
+  ],
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./lib/index.d.ts",
+  "unpkg": "dist/vue-hooks.js",
+  "sideEffects": false,
+  "authors": {
+    "name": "vue-hooks-team"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://github.com/alibaba/hooks",
+  "homepage": "https://github.com/alibaba/hooks",
+  "scripts": {
+    "build": "gulp && webpack-cli",
+    "dev": "vite",
+    "type-check": "vue-tsc --noEmit"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "metadata.json",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.21.0",
+    "dayjs": "^1.9.1",
+    "js-cookie": "^3.0.5",
+    "lodash": "^4.17.21",
+    "tslib": "^2.4.1",
+    "vue": "^3.5.22"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "typescript": "^5.9.2",
+    "vite": "^4.0.0",
+    "vue-tsc": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,4 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';
+exports.default = isBrowser;
