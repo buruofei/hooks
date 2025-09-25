@@ -1,9 +1,9 @@
-# v-hooks
+# ahooks-vue3
 
 <p align="center">
-  <img src="https://img.shields.io/npm/v/v-hooks.svg" alt="npm version" />
-  <img src="https://img.shields.io/npm/dm/v-hooks.svg" alt="npm downloads" />
-  <img src="https://img.shields.io/bundlephobia/minzip/v-hooks.svg" alt="bundle size" />
+  <img src="https://img.shields.io/npm/v/ahooks-vue3.svg" alt="npm version" />
+  <img src="https://img.shields.io/npm/dm/ahooks-vue3.svg" alt="npm downloads" />
+  <img src="https://img.shields.io/bundlephobia/minzip/ahooks-vue3.svg" alt="bundle size" />
   <img src="https://img.shields.io/github/license/buruofei/hooks.svg" alt="license" />
 </p>
 
@@ -24,12 +24,19 @@ English | [简体中文](./README.zh-CN.md)
 ## 📦 Installation
 
 ```bash
-npm install v-hooks
+npm install ahooks-vue3
 # or
-yarn add v-hooks
+yarn add ahooks-vue3
 # or
-pnpm add v-hooks
+pnpm add ahooks-vue3
 ```
+
+### Usage
+
+The package provides multiple module formats:
+- **ES Modules**: `import { useCounter } from 'ahooks-vue3'` (recommended)
+- **CommonJS**: `const { useCounter } = require('ahooks-vue3')`
+- **UMD**: Available via CDN for browser usage
 
 ## 🔨 Quick Start
 
@@ -44,7 +51,7 @@ pnpm add v-hooks
 </template>
 
 <script setup lang="ts">
-import { useCounter } from 'v-hooks'
+import { useCounter } from 'ahooks-vue3'
 
 const [count, { increment, decrement, reset }] = useCounter(0)
 </script>
@@ -90,7 +97,7 @@ const [count, { increment, decrement, reset }] = useCounter(0)
 
 **[View all 77+ hooks →](https://github.com/buruofei/hooks/tree/master/packages/vue-hooks/src)**
 
-## 🌟 Why v-hooks?
+## 🌟 Why ahooks-vue3?
 
 ### Familiar API
 If you're coming from React's ahooks, you'll feel right at home:
@@ -99,7 +106,7 @@ If you're coming from React's ahooks, you'll feel right at home:
 // React (ahooks)
 const [count, { increment }] = useCounter(0)
 
-// Vue (v-hooks) - Same API!
+// Vue (ahooks-vue3) - Same API!
 const [count, { increment }] = useCounter(0)
 ```
 
@@ -108,7 +115,7 @@ Built specifically for Vue 3's reactivity system:
 
 ```vue
 <script setup>
-import { useDebounce } from 'v-hooks'
+import { useDebounce } from 'ahooks-vue3'
 
 const input = ref('')
 const debouncedValue = useDebounce(input, 500)
@@ -121,7 +128,7 @@ const debouncedValue = useDebounce(input, 500)
 Full TypeScript support with intelligent IntelliSense:
 
 ```typescript
-import { useRequest } from 'v-hooks'
+import { useRequest } from 'ahooks-vue3'
 
 interface User {
   id: number
@@ -138,7 +145,7 @@ const { data, loading, error } = useRequest<User[]>('/api/users')
 
 ```vue
 <script setup>
-import { useBoolean, useToggle, useCounter } from 'v-hooks'
+import { useBoolean, useToggle, useCounter } from 'ahooks-vue3'
 
 // Boolean state
 const [loading, { setTrue: startLoading, setFalse: stopLoading }] = useBoolean(false)
@@ -155,7 +162,7 @@ const [count, { increment, decrement, reset }] = useCounter(0)
 
 ```vue
 <script setup>
-import { useEventListener, useClickAway, useHover } from 'v-hooks'
+import { useEventListener, useClickAway, useHover } from 'ahooks-vue3'
 
 const buttonRef = ref()
 const isHovering = useHover(buttonRef)
@@ -176,7 +183,7 @@ useClickAway(() => {
 
 ```vue
 <script setup>
-import { useLocalStorageState, useSessionStorageState } from 'v-hooks'
+import { useLocalStorageState, useSessionStorageState } from 'ahooks-vue3'
 
 // Persisted in localStorage
 const [user, setUser] = useLocalStorageState('user', { name: 'Guest' })
@@ -192,7 +199,7 @@ We welcome all contributions! Please read our [Contributing Guide](https://githu
 
 ## 📄 License
 
-MIT License © 2024 v-hooks team
+MIT License © 2024 ahooks-vue3 team
 
 ## 🙏 Acknowledgments
 

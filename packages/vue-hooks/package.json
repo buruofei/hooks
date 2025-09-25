@@ -1,21 +1,23 @@
 {
   "name": "ahooks-vue3",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A high-quality & reliable Vue 3 Composition API hooks library, ported from ahooks",
   "keywords": [
     "vue-hooks",
     "vue3-hooks",
     "composition-api",
     "vue-composables",
-    "v-hooks",
+    "ahooks-vue3",
     "ahooks",
     "vue3",
-    "typescript"
+    "typescript",
+    "react-to-vue",
+    "hooks-library"
   ],
-  "main": "./src/index.ts",
-  "module": "./src/index.ts",
-  "types": "./src/index.ts",
-  "unpkg": "./src/index.ts",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./lib/index.d.ts",
+  "unpkg": "dist/ahooks-vue3.js",
   "sideEffects": false,
   "author": {
     "name": "v-hooks-team",
@@ -35,16 +37,21 @@
     "url": "https://github.com/buruofei/hooks/issues"
   },
   "scripts": {
-    "build": "echo 'Build completed - using TypeScript source directly'",
+    "build": "gulp && webpack --mode production",
+    "build:umd": "webpack --mode production",
+    "clean": "gulp clean",
     "dev": "vite",
     "type-check": "vue-tsc --noEmit",
+    "prepublishOnly": "npm run build",
     "test": "echo \"No tests specified\" && exit 0"
   },
   "files": [
-    "src/**/*",
+    "dist",
+    "lib",
+    "es",
+    "metadata.json",
     "package.json",
-    "README.md",
-    "CHANGELOG.md"
+    "README.md"
   ],
   "dependencies": {
     "@babel/runtime": "^7.21.0",
@@ -58,13 +65,28 @@
     "vue": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-typescript": "^7.27.1",
     "@types/js-cookie": "^3.0.6",
     "@types/lodash": "^4.17.20",
     "@types/node": "^24.5.2",
     "@vitejs/plugin-vue": "^4.0.0",
+    "babel-loader": "^10.0.0",
+    "del": "^8.0.1",
+    "fast-glob": "^3.3.3",
+    "fs-extra": "^11.3.2",
+    "gray-matter": "^4.0.3",
+    "gulp": "^5.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "ts-loader": "^9.5.4",
     "typescript": "^5.9.2",
     "vite": "^4.0.0",
-    "vue-tsc": "^1.0.0"
+    "vue-tsc": "^1.0.0",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
   },
   "engines": {
     "node": ">=16"

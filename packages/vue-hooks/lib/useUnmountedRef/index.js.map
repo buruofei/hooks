@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/useUnmountedRef/index.ts"],"names":[],"mappings":";;AAAA,6BAAgD;AAEhD,SAAS,eAAe;IACtB,MAAM,YAAY,GAAG,IAAA,SAAG,EAAC,KAAK,CAAC,CAAA;IAE/B,IAAA,iBAAW,EAAC,GAAG,EAAE;QACf,YAAY,CAAC,KAAK,GAAG,IAAI,CAAA;IAC3B,CAAC,CAAC,CAAA;IAEF,OAAO,YAAY,CAAA;AACrB,CAAC;AAED,kBAAe,eAAe,CAAA"}

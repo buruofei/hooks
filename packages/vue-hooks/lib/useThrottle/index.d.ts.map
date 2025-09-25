@@ -1,1 +1,0 @@
-{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../src/useThrottle/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAc,KAAK,GAAG,EAAE,MAAM,KAAK,CAAA;AAE1C,OAAO,KAAK,EAAE,eAAe,EAAE,MAAM,0BAA0B,CAAA;AAE/D,iBAAS,WAAW,CAAC,CAAC,EAAE,KAAK,EAAE,CAAC,EAAE,OAAO,CAAC,EAAE,eAAe,GAAG,GAAG,CAAC,CAAC,CAAC,CAYnE;AAED,eAAe,WAAW,CAAA"}

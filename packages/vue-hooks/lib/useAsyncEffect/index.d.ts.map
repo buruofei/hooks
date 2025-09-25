@@ -1,1 +1,0 @@
-{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../src/useAsyncEffect/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAsB,KAAK,WAAW,EAAE,MAAM,KAAK,CAAA;AAS1D,iBAAS,cAAc,CACrB,MAAM,EAAE,MAAM,cAAc,CAAC,IAAI,EAAE,IAAI,EAAE,IAAI,CAAC,GAAG,OAAO,CAAC,IAAI,CAAC,EAC9D,IAAI,CAAC,EAAE,WAAW,GAAG,WAAW,EAAE,QAkCnC;AAED,eAAe,cAAc,CAAA"}
